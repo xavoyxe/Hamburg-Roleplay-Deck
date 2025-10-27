@@ -1,4 +1,4 @@
-[![Hamburg Roleplay Deck Banner](./82b1239f-adc8-4505-999b-36eb034d65c5.png)](https://s3.galaxybot.app/server/1273251270903337000/b90669d9-077e-46e2-b326-abf726d33264.png)
+[![Hamburg Roleplay Deck Banner](b90669d9-077e-46e2-b326-abf726d33264.png)](https://s3.galaxybot.app/server/1273251270903337000/b90669d9-077e-46e2-b326-abf726d33264.png)
 
 # 🏙️ Hamburg Roleplay Deck
 
