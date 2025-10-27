@@ -1,4 +1,4 @@
-[![Hamburg Roleplay Deck Banner](https://raw.githubusercontent.com/DEIN-GITHUB-NAME/Hamburg-Roleplay-Deck/main/assets/banner.png)](https://discord.gg/DEIN-LINK)
+[![Hamburg Roleplay Deck Banner](https://raw.githubusercontent.com/xavoyxe/Hamburg-Roleplay-Deck/main/assets/banner.png)](https://discord.gg/bBMDRYTwbn)
 
 # 🏙️ Hamburg Roleplay Deck
 
