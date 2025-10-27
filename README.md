@@ -2,37 +2,48 @@
 
 # 🏙️ Hamburg Roleplay Deck
 
-## Wer Wir Sind
-Wir entwickeln den **Hamburg Roleplay Bot** – ein leistungsstarkes System für Discord-Roleplay-Server, das Verwaltung, Charaktere und Interaktionen vereinfacht.  
-Unser Ziel ist es, ein professionelles und unterhaltsames Roleplay-Erlebnis für die Community aus Hamburg und Umgebung zu schaffen.  
-
-Der Bot wird aktiv weiterentwickelt und von engagierten Entwicklern gepflegt – **Beiträge sind willkommen!**
+**Hamburg Roleplay Deck** ist das zentrale Repo für den **Hamburg Roleplay Bot** — ein persönlicher Discord-Bot (Python, v3.10) mit Slash- und Prefix-Befehlen zur Verwaltung von Ausweisen, Reports und Community-Interaktionen.
 
 ---
 
-- [Discord Server](https://discord.gg/DEIN-LINK)
-- [Dokumentation](./docs/README.md)
-- [Feature-Übersicht](./docs/features.md)
-- [Website](https://DEINE-WEBSITE.de)
-- [Mitwirken](./CONTRIBUTING.md)
+## 🔎 Kurzbeschreibung
+Der Bot bietet sowohl Slash-Commands (`/`) als auch klassische Prefix-Commands (`!`). Er ist ein persönlicher Bot für Roleplay-Zwecke und unterstützt Funktionen wie das Erstellen / Löschen / Anzeigen von Ausweisen (inkl. Modal UI für Eingaben) sowie das Senden von Bugreports.
 
 ---
 
-Unser aktuelles Projekt und Updates findest du [hier](./CHANGELOG.md).
+## 🧭 Befehlsübersicht
+
+### `/ausweis-erstellen`
+**Beschreibung:** Erstelle einen normalen oder gefälschten Ausweis.  
+**Verhalten:** Öffnet ein Modal (eingabefeldähnliche UI), in dem Informationen wie Name, Alter, Beruf, Stadt etc. eingetragen werden. Nach Bestätigung wird der Ausweis erstellt und dem Nutzer zugeordnet.  
+**Beispiel:** `/ausweis-erstellen` → Modal mit Feldern → Bestätigen → Ausweis gespeichert
+
+### `/ausweis-löschen`
+**Beschreibung:** Lösche deinen eigenen Ausweis.  
+**Verhalten:** Löscht den im System hinterlegten Ausweis des Nutzers. Optional mit Sicherheitsabfrage/Confirm.  
+**Beispiel:** `/ausweis-löschen` → Bestätigungs-Prompt → Ausweis gelöscht
+
+### `/ausweis-ansehen`
+**Beschreibung:** Zeige deinen Ausweis oder den Ausweis eines anderen Nutzers an.  
+**Verhalten:** Zeigt den formatierten Ausweis an. Optional: Freigabe-/Privacy-System — der angezeigte Ausweis kann nur bei Zustimmung des Besitzers eingesehen werden.  
+**Beispiel:** `/ausweis-ansehen @Spieler` → Zeigt Ausweis, falls freigegeben
+
+### `/report`
+**Beschreibung:** Sende einen Bug- oder Fehlerreport an das Team.  
+**Verhalten:** Öffnet ein kurzes Modal oder nimmt Argumente entgegen. Sendet Report an konfigurierten Report-Channel oder Log.  
+**Beispiel:** `/report` → Modal für Titel & Beschreibung → Report erstellt/gesendet
 
 ---
 
-### ⚙️ Technologien
-- **Discord.js / Discord API**
-- **Node.js**
-- **MongoDB / JSON Storage**
-- **Custom RP Modules**
+## ⚙️ Features & Verhalten
+- Unterstützt sowohl **Slash**- als auch **Prefix-Commands** (z. B. `!help` optional).
+- **Modal-UI** für /ausweis-erstellen und /report zur komfortablen Eingabe.
+- **Freigabe-System**: Nutzer können steuern, wer ihren Ausweis sehen darf.
+- **Persistenz:** Speicherung der Ausweise in einer Datenbank (z. B. MongoDB) oder JSON (je nach Konfiguration).
+- **Konfigurierbar:** Prefix, Datenbank-URL, Report-Channel, Rollen etc. über `.env` oder config-Datei.
 
 ---
 
-### ❤️ Unterstütze das Projekt
-Wenn dir das Projekt gefällt, **gib uns ein ⭐ auf GitHub** oder teile es mit anderen Roleplay-Fans!
+## 🛠️ Installation (Python 3.10)
 
----
-
-© 2025 Hamburg Roleplay Deck – MIT License
+> Voraussetzungen: Python 3.10 installiert
